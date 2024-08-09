@@ -20,18 +20,16 @@ new fullpage('#fullpage', {
 
         // using index
         if(destination.index == 0 ){
-            
+            sec1_out();
         }if(destination.index == 1 ){
             sec1_in();
         }if(destination.index == 2 ){
-			
+			sec1_out();
 		}if(destination.index == 3 ){
 			
 		}if(destination.index == 4 ){
 			
 		}if(origin.index == 1){
-            sec1_out();
-		}if(origin.index == 2){
             
 		}
     }

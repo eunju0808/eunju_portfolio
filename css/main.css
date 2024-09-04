@@ -366,6 +366,9 @@ header .inner .menu_wrap .btn_menu.on .bottom{
     color: #92B4EC;
     border-bottom: 2px solid #ccc;
 }
+#section2 .web .swiper .swiper-wrapper .swiper-slide .contents>.info_box>h3>span{
+    font-size: 1.25rem;
+}
 #section2 .web .swiper .swiper-wrapper .swiper-slide .contents>.info_box>ul{
     display: flex;
     flex-direction: column;
@@ -429,6 +432,11 @@ header .inner .menu_wrap .btn_menu.on .bottom{
 #section2 .web .swiper .swiper-wrapper .swiper-slide .contents>.info_box>.btn_wrap>div>button:hover{
     background: #92B4EC;
     color: #fff;
+}
+#section2 .web .swiper .swiper-wrapper .swiper-slide .contents>.info_box>.btn_wrap>div>button.off{
+    background: #ccc;
+    border: none;
+    cursor: default;
 }
 #section2 .web .swiper .swiper-button-prev,
 #section2 .web .swiper .swiper-button-next{

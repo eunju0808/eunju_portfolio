@@ -9,6 +9,7 @@ body{
 button{
     font-family: 'NanumSquare', sans-serif;
 }
+/* header */
 header{
     width: 100%;
     height: 50px;
@@ -144,7 +145,7 @@ header .inner .menu_wrap .btn_menu.on .bottom{
     bottom: 60px;
     animation: scrolldown 0.6s ease-in-out alternate infinite;
 }
-#section0 .scroll_down .sc_dot{
+#section0 .scroll_down .scroll_dot{
     position: absolute;
     left: 50%;
     top: 0;
@@ -252,7 +253,7 @@ header .inner .menu_wrap .btn_menu.on .bottom{
     width: 459px;
 }
 #section1 .part_wrap .part3 ul li .skill{
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     background: #fff;
     border: 2px solid #FFE69A;
@@ -263,6 +264,7 @@ header .inner .menu_wrap .btn_menu.on .bottom{
 #section1 .part_wrap .part3 ul li .skill img{
     width: 100%;
     height: 100%;
+    border-radius: 4px;
 }
 #section1 .part_wrap .part3 ul li{
     display: flex;
@@ -506,39 +508,62 @@ header .inner .menu_wrap .btn_menu.on .bottom{
 #section3 .gallery .container_wrap2{
     display: none;
 }
-/* contact + footer */
-#section4 h3{
+/* CONTACT */
+#section4 .contact_wrap{
+    width: 100%;
+    height: 626px;
+}
+#section4 .contact_wrap h3{
     font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 60px;
     padding-bottom: 16px;
     color: #92B4EC;
     border-bottom: 2px solid #ccc;
 }
-#section4 p{
-    font-size: 1.125rem;
+#section4 .contact_wrap h4{
+    font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 30px;
+    text-align: center;
 }
-#section4 ul{
+#section4 .contact_wrap ul{
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    justify-content: center;
+    gap: 16px;
 }
-#section4 ul li{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    font-size: 1.125rem;
+#section4 .contact_wrap ul li{
+    width: 400px;
+    border: 1px solid #92B4EC;
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+#section4 .contact_wrap ul li>p{
+    font-size: 1.25rem;
     font-weight: 400;
 }
-#section4 ul li span{
-    display: block;
+#section4 .contact_wrap ul li .contact{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    color: #92B4EC;
+}
+#section4 .contact_wrap ul li .contact svg{
     width: 20px;
     font-size: 1.25rem;
     text-align: center;
-    color: #ccc;
 }
+#section4 .contact_wrap ul li .contact>span{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+#section4 .contact_wrap .center_box{
+    width: 100%;
+    height: 580px;
+    padding: 179px 0 229px;
+}
+/* footer */
 #section4 footer{
     width: 100%;
     height: 180px;
@@ -553,47 +578,4 @@ header .inner .menu_wrap .btn_menu.on .bottom{
 }
 #section4 footer p{
     font-size: 1rem;
-}
-/* 갤러리 디테일 페이지 */
-.detail_wrap{
-    width: 100%;
-    height: 100vh;;
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    display: none;
-}
-.detail_wrap .detail{
-    width: 877px;
-    height: 860px;
-    padding-top: 37px;
-    box-sizing: border-box;
-    background: #92B4EC;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.detail_wrap .detail .img_box{
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    text-align: center;
-    overflow-y: scroll;
-}
-.detail_wrap .detail .img_box img{
-    width: 100%;
-}
-.detail_wrap .detail .btn_close{
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    right: 17px;
-    top: 7.5px;
-}
-.detail_wrap .detail .btn_close img{
-    width: 100%;
-    height: 100%;
 }

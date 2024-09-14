@@ -64,7 +64,7 @@ $(function(){
         $(".web .swiper").eq(num).show();
 	});
 
-	// tap 메뉴 (web)
+	// tap 메뉴 (gallery)
 	$("#section3 .tap_menu ul li").on('click',function(){
 		let num=$(this).index();
         console.log(num);
@@ -73,42 +73,6 @@ $(function(){
 
 		$(".gallery .container_wrap").hide();
         $(".gallery .container_wrap").eq(num).show();
-	})
-
-	// 그래픽 상세페이지 닫기
-	$(".btn_close").on('click',function(){
-		$(".detail_wrap").hide();
-		$('body').off('scroll touchmove mousewheel');
-	})
-	// 그래픽 상세페이지 열기
-	$(".container_graphic .item").on('click',function(){
-		let num=$(this).index();
-		console.log(num);
-		$(".detail_graphic .detail_wrap").hide();
-		$(".detail_graphic .detail_wrap").eq(num).show();
-		$('body').on('scroll touchmove mousewheel', function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-			return false;
-		});
-	})
-
-	// uiux 상세페이지 닫기
-	$(".btn_close").on('click',function(){
-		$(".detail_wrap").hide();
-		$('body').off('scroll touchmove mousewheel');
-	})
-	// uiux 상세페이지 열기
-	$(".container_uiux .item").on('click',function(){
-		let num=$(this).index();
-		console.log(num);
-		$(".detail_uiux .detail_wrap").hide();
-		$(".detail_uiux .detail_wrap").eq(num).show();
-		$('body').on('scroll touchmove mousewheel', function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-			return false;
-		});
 	})
 });
 
@@ -163,6 +127,18 @@ function sec1_in(){
     .add({
         targets: '.gage5',
         width: '65%',
+    })
+	.add({
+        targets: '.gage6',
+        width: '90%',
+    })
+	.add({
+        targets: '.gage7',
+        width: '90%',
+    })
+	.add({
+        targets: '.gage8',
+        width: '90%',
     })
 }
 // profile을 벗어나면 gage 0

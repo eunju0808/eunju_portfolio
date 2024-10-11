@@ -9,7 +9,7 @@ body{
 button{
     font-family: 'NanumSquare', sans-serif;
 }
-/* header */
+/* 헤더 & 네비게이션바 */
 header{
     width: 100%;
     height: 50px;
@@ -137,7 +137,7 @@ header .inner .menu_wrap .btn_menu.on .bottom{
     top: 50%;
     transform: translate(-50%,-50%);
 }
-#section0 .scroll_down{
+#section0 .scrolldown{
     width: 26px;
     height: 57px;
     position: absolute;
@@ -145,7 +145,7 @@ header .inner .menu_wrap .btn_menu.on .bottom{
     bottom: 60px;
     animation: scrolldown 0.6s ease-in-out alternate infinite;
 }
-#section0 .scroll_down .scroll_dot{
+#section0 .scrolldown .scrolldown_dot{
     position: absolute;
     left: 50%;
     top: 0;
